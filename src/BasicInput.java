@@ -3,9 +3,9 @@ import java.io.IOException;
 public class BasicInput {
 
     public static String readString() throws IOException {
-        byte b[] = new byte[255];
+        byte[] b = new byte[255];
         int length = System.in.read(b);
-        byte bt[] = new byte[length-1];
+        byte[] bt = new byte[length-1];
         System.arraycopy(b,0,bt,0,length-1);
         String s = new String(bt);
         return s;

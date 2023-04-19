@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.util.Scanner;
 
 public class Menu {
 
@@ -35,44 +34,44 @@ public class Menu {
                     //scanner.nextInt();
 
             switch (choice) {
-                case 1:
+                case 1 -> {
                     System.out.println("Enter 1st number : ");
                     number1 = BasicInput.readInteger();
                     System.out.println("Enter 2nd number : ");
                     number2 = BasicInput.readInteger();
                     math.add(number1, number2);
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     System.out.println("Enter 1st number : ");
                     number1 = BasicInput.readInteger();
                     System.out.println("Enter 2nd number : ");
                     number2 = BasicInput.readInteger();
                     math.sub(number1, number2);
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     System.out.println("Enter 1st number : ");
                     number1 = BasicInput.readInteger();
                     System.out.println("Enter 2nd number : ");
                     number2 = BasicInput.readInteger();
                     math.multiplication(number1, number2);
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     System.out.println("Enter 1st number : ");
                     number1 = BasicInput.readInteger();
                     System.out.println("Enter 2nd number : ");
                     number2 = BasicInput.readInteger();
                     math.divide(number1, number2);
-                    break;
-                case 5:
+                }
+                case 5 -> {
                     System.out.println("Enter the number : ");
                     number1 = BasicInput.readInteger();
                     math.cube(number1);
-                    break;
-                case 6:
+                }
+                case 6 -> {
                     System.out.println("Enter the number : ");
                     number1 = BasicInput.readInteger();
                     math.square(number1);
-                    break;
+                }
             }
 
             System.out.print("Do you want to perform more operations?");
